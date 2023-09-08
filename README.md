@@ -9,7 +9,7 @@ Setup PostgresSQL using this action.
 ```yaml
 ...
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Setup PostgreSQL
         uses: tj-actions/setup-postgresql@v1
         with:
