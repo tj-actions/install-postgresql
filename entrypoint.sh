@@ -37,7 +37,7 @@ if [[ "$(uname -s)" == "Linux" ]]; then
     # Install PostgreSQL
     sudo apt-get install -y "postgresql-$INPUT_POSTGRESQL_VERSION"
 elif [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(uname -s)" == *"MSYS"* ]]; then
-    choco install "postgresql$INPUT_POSTGRESQL_VERSION" -y
+    choco install "postgresql$INPUT_POSTGRESQL_VERSION" -y --no-progress
 elif [[ "$(uname -s)" == "Darwin" ]]; then
     brew update
     brew install "postgresql@$INPUT_POSTGRESQL_VERSION"
@@ -52,8 +52,8 @@ echo "Verifying installation..."
 
 # Verify installation by running pg_dump directly
 if [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(uname -s)" == *"MSYS"* ]]; then
-    "/Program Files/PostgreSQL/$INPUT_POSTGRESQL_VERSION/bin/pg_dump" --version
-    echo "/Program Files/PostgreSQL/$INPUT_POSTGRESQL_VERSION/bin" >> $GITHUB_PATH
+    "C:/Program Files/PostgreSQL/$INPUT_POSTGRESQL_VERSION/bin/pg_dump" --version
+    echo "C:/Program Files/PostgreSQL/$INPUT_POSTGRESQL_VERSION/bin" >> $GITHUB_PATH
 elif [[ "$(uname -s)" == "Darwin" ]]; then
     "/usr/local/opt/postgresql@${INPUT_POSTGRESQL_VERSION}/bin/pg_dump" --version
     echo "/usr/local/opt/postgresql@${INPUT_POSTGRESQL_VERSION}/bin" >> $GITHUB_PATH
