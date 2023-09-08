@@ -10,8 +10,10 @@ Setup PostgresSQL using this action.
 ...
     steps:
       - uses: actions/checkout@v2
-      - name: Docker Action
-        uses: tj-actions/docker-action@v1
+      - name: Setup PostgreSQL
+        uses: tj-actions/setup-postgresql@v1
+        with:
+          postgresql_version: 15
 ```
 
 ## Inputs
