@@ -55,8 +55,8 @@ if [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(unam
     "/Program Files/PostgreSQL/$INPUT_POSTGRESQL_VERSION/bin/pg_dump" --version
     echo "/Program Files/PostgreSQL/$INPUT_POSTGRESQL_VERSION/bin" >> $GITHUB_PATH
 elif [[ "$(uname -s)" == "Darwin" ]]; then
-    "$(brew --prefix postgresql@${INPUT_POSTGRESQL_VERSION})/bin/pg_dump" --version
-    echo "$(brew --prefix postgresql@${INPUT_POSTGRESQL_VERSION})/bin" >> $GITHUB_PATH
+    "/usr/local/opt/postgresql@${INPUT_POSTGRESQL_VERSION}/bin/pg_dump" --version
+    echo "/usr/local/opt/postgresql@${INPUT_POSTGRESQL_VERSION}/bin" >> $GITHUB_PATH
 else
     "/usr/lib/postgresql/$INPUT_POSTGRESQL_VERSION/bin/pg_dump" --version
     echo "/usr/lib/postgresql/$INPUT_POSTGRESQL_VERSION/bin" >> $GITHUB_PATH
