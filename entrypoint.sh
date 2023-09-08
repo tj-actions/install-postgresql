@@ -53,11 +53,12 @@ echo "Verifying installation..."
 # Verify installation by running pg_dump directly
 if [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(uname -s)" == *"MSYS"* ]]; then
     "/Program Files/PostgreSQL/$INPUT_POSTGRESQL_VERSION/bin/pg_dump" --version
-
     echo "/Program Files/PostgreSQL/$INPUT_POSTGRESQL_VERSION/bin" >> $GITHUB_PATH
+elif [[ "$(uname -s)" == "Darwin" ]]; then
+    "$(brew --prefix postgresql@${INPUT_POSTGRESQL_VERSION})/bin/pg_dump" --version
+    echo "$(brew --prefix postgresql@${INPUT_POSTGRESQL_VERSION})/bin" >> $GITHUB_PATH
 else
     "/usr/lib/postgresql/$INPUT_POSTGRESQL_VERSION/bin/pg_dump" --version
-
     echo "/usr/lib/postgresql/$INPUT_POSTGRESQL_VERSION/bin" >> $GITHUB_PATH
 fi
 
