@@ -1,17 +1,21 @@
-name: Docker Action
-description:  Template Docker action
+name: setup-postgresql
+description: Setup PostgreSQL
 author: tj-actions
 inputs:
-  token:
-    description: 'GITHUB_TOKEN or a Repo scoped PAT'
+  postgresql_version: 
+    description: 'Version of PostgreSQL. e.g 15'
     required: true
-    default: ${{ github.token }}
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.token }}
+  using: 'composite'
+  steps:
+    - run: |
+        bash $GITHUB_ACTION_PATH/entrypoint.sh
+      shell: bash
+      env:
+        # INPUT_<VARIABLE_NAME> is not available in Composite run steps
+        # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
+        INPUT_POSTGRESQL_VERSION: ${{ inputs.postgresql_version }}
 branding:
-  icon: check-square
+  icon: hard-drive
   color: white
