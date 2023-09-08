@@ -22,6 +22,8 @@ echo "Validated postgresql version: $INPUT_POSTGRESQL_VERSION"
 
 echo "Installing postgresql..."
 
+echo "OS: $(uname -s)"
+
 if [[ "$(uname -s)" == "Linux" ]]; then
     # Create the file repository configuration:
     sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
