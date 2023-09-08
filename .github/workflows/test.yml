@@ -10,8 +10,13 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-    name: Test docker-action
+    name: Test setup-postgresql
+    runs-on: ${{ matrix.platform }}
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [ubuntu-latest, windows-latest, macos-latest, macos-11, windows-2022]
+        postgresql_version: [10, 11, 12, 14, 15]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -19,3 +24,5 @@ jobs:
         uses: reviewdog/action-shellcheck@v1
       - name: Run docker-action
         uses: ./
+        with:
+          postgresql_version: ${{ matrix.postgresql_version }}
