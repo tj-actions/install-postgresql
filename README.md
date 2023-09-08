@@ -2,9 +2,9 @@
 [![Update release version.](https://github.com/tj-actions/docker-action/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/docker-action/actions?query=workflow%3A%22Update+release+version.%22)
 [![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fused-by.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fdocker-action%26badge%3Dtrue)](https://github.com/search?o=desc\&q=tj-actions+docker-action+path%3A.github%2Fworkflows+language%3AYAML\&s=\&type=Code)
 
-## docker-action
+## setup-postgresql
 
-Template Docker action
+Setup PostgresSQL using this action.
 
 ```yaml
 ...
