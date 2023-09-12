@@ -19,7 +19,7 @@ runs:
         elif [[ "${{ runner.os }}" == "Windows" ]]; then
           cache_dir=$(choco search postgresql${{ inputs.postgresql_version }} --exact --limit-output | grep "^postgresql " | awk '{print $NF}')
         fi
-        echo "::set-output name=cache_dir::$cache_dir"
+        echo "cache_dir=$cache_dir" >> "$GITHUB_OUTPUT"
       shell: bash
 
     - name: Cache
