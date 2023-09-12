@@ -22,7 +22,7 @@ jobs:
   test:
     name: Test setup-postgresql
     runs-on: ${{ matrix.platform }}
-    concurrency: ${{ matrix.platform }}-${{ matrix.postgresql_version }}
+    concurrency: ${{ matrix.platform }}-${{ matrix.postgresql_version }}-${{ github.ref }}
     strategy:
       fail-fast: false
       matrix:
@@ -34,7 +34,7 @@ jobs:
       - name: Run setup-postgresql
         uses: ./
         with:
-          postgresql_version: ${{ matrix.postgresql_version }}
+          postgresql-version: ${{ matrix.postgresql_version }}
       - name: Verify PostgreSQL
         run: |
           pg_dump --version
