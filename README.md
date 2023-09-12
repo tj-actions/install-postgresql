@@ -8,7 +8,7 @@
 
 ## setup-postgresql
 
-This Github action installs PostgreSQL on the GitHub runner and verifies the installation.
+This Github action installs PostgreSQL on the GitHub actions runner and verifies the installation.
 
 ```yaml
 ...
