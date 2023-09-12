@@ -1,5 +1,29 @@
 # Changelog
 
+# [2.0.1](https://github.com/tj-actions/install-postgresql/compare/v2.0.0...v2.0.1) - (2023-09-12)
+
+## <!-- 26 -->🔄 Update
+
+- Update test.yml ([58ec590](https://github.com/tj-actions/install-postgresql/commit/58ec590711343f2e991d997b8a3acde7d088ff7b))  - (Tonye Jack)
+- Update test.yml ([1d34b01](https://github.com/tj-actions/install-postgresql/commit/1d34b01af4b5c96b6542f0f6df0cfee5e3521efb))  - (Tonye Jack)
+- Update test.yml ([b6a60f0](https://github.com/tj-actions/install-postgresql/commit/b6a60f0058bb8eeaa8d26b111eb38ddac6638ae8))  - (Tonye Jack)
+- Updated README.md
+ ([266f0ec](https://github.com/tj-actions/install-postgresql/commit/266f0ec00254146ea96f0379603dfe7e77cb4de9))  - (jackton1)
+
+## <!-- 30 -->📝 Other
+
+- PR [#9](https://github.com/tj-actions/install-postgresql/pull/9): ([dc0a738](https://github.com/tj-actions/install-postgresql/commit/dc0a738f5a8508a25467006d933605e4e45d5b38))  - (Tonye Jack)
+- PR [#6](https://github.com/tj-actions/install-postgresql/pull/6): ([760b2ba](https://github.com/tj-actions/install-postgresql/commit/760b2baaaf0478544b0669b26c12aeb6ff45fca2))  - (Tonye Jack)
+- PR [#7](https://github.com/tj-actions/install-postgresql/pull/7): ([029ecd9](https://github.com/tj-actions/install-postgresql/commit/029ecd90778c883c497baf41516b3bc0d9e4b556))  - (Tonye Jack)
+- Merge branch 'main' into chore/update-readme ([74524f5](https://github.com/tj-actions/install-postgresql/commit/74524f5979468ddc8433139427f6a3c7c469257e))  - (repo-ranger[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v1.1.0 -> v2
+ ([03ca431](https://github.com/tj-actions/install-postgresql/commit/03ca4314d6c82d870b22548583169866993224d3))  - (jackton1)
+- Upgraded from v1.1.0 -> v1.1.0
+ ([4fbb6ed](https://github.com/tj-actions/install-postgresql/commit/4fbb6ed959d8fc4ff9ad92bcf0dd8c0166ae90e9))  - (jackton1)
+
 # [2.0.0](https://github.com/tj-actions/install-postgresql/compare/v1.1.0...v2.0.0) - (2023-09-12)
 
 ## <!-- 26 -->🔄 Update
