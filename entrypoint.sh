@@ -37,7 +37,7 @@ if [[ "$(uname -s)" == "Linux" ]]; then
     # Install PostgreSQL
     sudo apt-get install -y "postgresql-$INPUT_POSTGRESQL_VERSION"
 elif [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(uname -s)" == *"MSYS"* ]]; then
-    choco install "postgresql$INPUT_POSTGRESQL_VERSION" -y --no-progress
+    choco install "postgresql$INPUT_POSTGRESQL_VERSION" -y --no-progress --use-download-cache
 elif [[ "$(uname -s)" == "Darwin" ]]; then
     brew update
     brew install "postgresql@$INPUT_POSTGRESQL_VERSION"
