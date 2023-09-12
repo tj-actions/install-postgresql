@@ -14,11 +14,11 @@ runs:
       run: |
         set -x
         if [[ "${{ runner.os }}" == "Linux" ]]; then
-          cache_dir="$(apt-cache policy postgresql-${{ inputs.postgresql_version }} | awk '/Filename/ {print $2}')"
+          cache_dir="/var/cache/apt/archives/"
         elif [[ "${{ runner.os }}" == "macOS" ]]; then
           cache_dir="$(brew --cache postgresql@${{ inputs.postgresql_version }})"
         elif [[ "${{ runner.os }}" == "Windows" ]]; then
-          cache_dir="~\AppData\Local\Temp\chocolatey\postgresql-${{ inputs.postgresql_version }}"
+          cache_dir="~\AppData\Local\Temp\chocolatey"
         fi
         echo "cache_dir=$cache_dir" >> "$GITHUB_OUTPUT"
       shell: bash
