@@ -12,6 +12,7 @@ runs:
     - name: Get cache directory
       id: cache-dir
       run: |
+        set -x
         if [[ "${{ runner.os }}" == "Linux" ]]; then
           cache_dir=$(apt-cache policy postgresql-${{ inputs.postgresql_version }} | awk '/Filename/ {print $2}')
         elif [[ "${{ runner.os }}" == "macOS" ]]; then
