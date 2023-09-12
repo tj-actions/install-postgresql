@@ -35,3 +35,8 @@ jobs:
         uses: ./
         with:
           postgresql_version: ${{ matrix.postgresql_version }}
+      - name: Verify PostgreSQL
+        run: |
+          pg_dump --version
+          psql --version
+          pg_restore --version
