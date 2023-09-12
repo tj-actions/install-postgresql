@@ -34,6 +34,15 @@ runs:
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       shell: bash
+      # Skip if cache hit and it's on Windows
+      if: |
+        (
+            runner.os == 'Windows' && steps.cache-postgresql.outputs.cache-hit != 'true'
+        ) 
+        ||
+        ( 
+            runner.os != 'Windows'
+        )
       env:
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
