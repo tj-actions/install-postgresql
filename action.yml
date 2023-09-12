@@ -12,7 +12,6 @@ runs:
     - name: Get cache directory
       id: cache-dir
       run: |
-        set -x
         if [[ "${{ runner.os }}" == "Linux" ]]; then
           cache_dir="/var/cache/apt/archives/"
         elif [[ "${{ runner.os }}" == "macOS" ]]; then

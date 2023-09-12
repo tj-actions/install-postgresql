@@ -35,7 +35,7 @@ if [[ "$(uname -s)" == "Linux" ]]; then
     sudo apt-get update
 
     # Install PostgreSQL
-    sudo apt-get apt-get install -y "postgresql-$INPUT_POSTGRESQL_VERSION"
+    sudo apt-get install -y "postgresql-$INPUT_POSTGRESQL_VERSION"
 elif [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(uname -s)" == *"MSYS"* ]]; then
     choco install "postgresql$INPUT_POSTGRESQL_VERSION" -y --no-progress
 elif [[ "$(uname -s)" == "Darwin" ]]; then
