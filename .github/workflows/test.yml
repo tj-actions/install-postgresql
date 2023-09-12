@@ -12,6 +12,9 @@ jobs:
   shellcheck:
     name: Run shellcheck
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
 
     steps:
       - name: Checkout to branch
@@ -23,6 +26,9 @@ jobs:
   test:
     name: Test setup-postgresql
     runs-on: ${{ matrix.platform }}
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
     strategy:
       fail-fast: false
       matrix:
