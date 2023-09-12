@@ -1,5 +1,5 @@
 name: setup-postgresql
-description: Setup PostgreSQL
+description: Install and verify PostgreSQL on the GitHub actions runner using a specified version
 author: tj-actions
 inputs:
   postgresql_version: 
