@@ -1,4 +1,49 @@
-History
--------
+# Changelog
 
-* Initial Release.
+# [1.0.0](https://github.com/tj-actions/install-postgresql/tree/v1.0.0) - (2023-09-12)
+
+## <!-- 14 -->🎉 Initial Commit
+
+- Initial commit ([6fb704b](https://github.com/tj-actions/install-postgresql/commit/6fb704b4571bf561618e7340670fc09fdfa40db1))  - (Tonye Jack)
+
+## <!-- 26 -->🔄 Update
+
+- Update README.md ([5c580e9](https://github.com/tj-actions/install-postgresql/commit/5c580e9f4d863345f70595e8b9d4c53136d19cbf))  - (Tonye Jack)
+- Update action.yml ([9f02d22](https://github.com/tj-actions/install-postgresql/commit/9f02d220ef4a554984977cd130f6922160fd460a))  - (Tonye Jack)
+- Update README.md ([85dc52a](https://github.com/tj-actions/install-postgresql/commit/85dc52a26987e5d1afdaa704066bd714065c2a73))  - (Tonye Jack)
+- Update action.yml ([7615737](https://github.com/tj-actions/install-postgresql/commit/7615737ca84283edd0cabf4b0e62a51ea3bd0a16))  - (Tonye Jack)
+- Update test.yml ([98434f2](https://github.com/tj-actions/install-postgresql/commit/98434f288237bc7f1755f6dce68186043a2d882a))  - (Tonye Jack)
+- Updated README.md
+ ([b85c704](https://github.com/tj-actions/install-postgresql/commit/b85c7042bffad06f4602d1e53b61101068149d13))  - (jackton1)
+- Update test.yml ([9fc5e45](https://github.com/tj-actions/install-postgresql/commit/9fc5e45b6b48236d4e7f6ac9bbb58a82bf52df6e))  - (Tonye Jack)
+- Update README.md ([7360e92](https://github.com/tj-actions/install-postgresql/commit/7360e92e81c4e9c7ed4fc61779b2b5e47f55285c))  - (Tonye Jack)
+- Update action.yml ([9946293](https://github.com/tj-actions/install-postgresql/commit/9946293537d49845348c5fad61299d35fb7d140c))  - (Tonye Jack)
+- Update README.md ([e3c44d0](https://github.com/tj-actions/install-postgresql/commit/e3c44d030c99bb41d2ba68e39a9832fb4e42eecb))  - (Tonye Jack)
+- Update README.md ([09d5426](https://github.com/tj-actions/install-postgresql/commit/09d542688627b478edf20d071469038fd22c56ff))  - (Tonye Jack)
+- Updated README.md
+ ([d61e8ce](https://github.com/tj-actions/install-postgresql/commit/d61e8ce4125afc0a3fe70dee80f14f5ca6b2c6a4))  - (Tonye Jack)
+- Update README.md ([ab7d11b](https://github.com/tj-actions/install-postgresql/commit/ab7d11b52c34822b44c8f10daf7d7679dcdf28e4))  - (Tonye Jack)
+- Update README.md ([0248305](https://github.com/tj-actions/install-postgresql/commit/024830544b6db3978c246d2da63b9c62d4b8c109))  - (Tonye Jack)
+- Update README.md ([8a392da](https://github.com/tj-actions/install-postgresql/commit/8a392da9f3cd0473eb1222223e4ce5a043ed1c10))  - (Tonye Jack)
+- Updated README.md
+ ([f194999](https://github.com/tj-actions/install-postgresql/commit/f194999f74eabc565d656ad2101fc68a84f41481))  - (jackton1)
+- Update entrypoint.sh ([96cb53f](https://github.com/tj-actions/install-postgresql/commit/96cb53f7ce40d67b371063f3d4ecc65f82fec5df))  - (Tonye Jack)
+- Update entrypoint.sh ([80fdc14](https://github.com/tj-actions/install-postgresql/commit/80fdc14dde6f629ed14630549ee43ea3a0f22c8f))  - (Tonye Jack)
+- Update entrypoint.sh ([3baac23](https://github.com/tj-actions/install-postgresql/commit/3baac232abc87b37dc2b91aa63b54ebd77e14a67))  - (Tonye Jack)
+- Update test.yml ([fd0ab4f](https://github.com/tj-actions/install-postgresql/commit/fd0ab4f3950a01c66ecc18a05e936d3798184850))  - (Tonye Jack)
+- Update test.yml ([cf43ba2](https://github.com/tj-actions/install-postgresql/commit/cf43ba2d1fbda4cf867c52951bb59ac236472c90))  - (Tonye Jack)
+- Update entrypoint.sh ([8f269f2](https://github.com/tj-actions/install-postgresql/commit/8f269f2f78ab8941afece6fcd93e7abe5c053fc1))  - (Tonye Jack)
+- Update entrypoint.sh ([f74af2e](https://github.com/tj-actions/install-postgresql/commit/f74af2e396ae2a11a6089484bbd03827e36671f0))  - (Tonye Jack)
+- Update entrypoint.sh ([0811194](https://github.com/tj-actions/install-postgresql/commit/08111940e718ecbeb56b96196949c5dbef5a5902))  - (Tonye Jack)
+- Update entrypoint.sh ([42692b0](https://github.com/tj-actions/install-postgresql/commit/42692b0e3d4b3d2004fe0b280fce9d71c2962128))  - (Tonye Jack)
+- Update entrypoint.sh ([1f3f531](https://github.com/tj-actions/install-postgresql/commit/1f3f5314e0d77150b877a9467a12328b04ff0afd))  - (Tonye Jack)
+- Update test.yml ([356f17f](https://github.com/tj-actions/install-postgresql/commit/356f17fc580b54230eb4e67bb1cc0d9686f3c4ba))  - (Tonye Jack)
+- Update action.yml ([d6b4e60](https://github.com/tj-actions/install-postgresql/commit/d6b4e609ccaafd9b1f32eb64de61d1c76ac5af26))  - (Tonye Jack)
+- Update entrypoint.sh ([d9fe6a0](https://github.com/tj-actions/install-postgresql/commit/d9fe6a0b4a9573a231969b511e0c418c37f8d922))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#2](https://github.com/tj-actions/install-postgresql/pull/2): ([39233dc](https://github.com/tj-actions/install-postgresql/commit/39233dcfab11a6d924185169812a48f4d70419b9))  - (Tonye Jack)
+- PR [#1](https://github.com/tj-actions/install-postgresql/pull/1): README.md ([44a2bba](https://github.com/tj-actions/install-postgresql/commit/44a2bbad3e42aa7b80a157520da2c54ae85c6720))  - (repo-ranger[bot])
+
+<!-- generated by git-cliff -->
