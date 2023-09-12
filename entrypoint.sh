@@ -35,7 +35,7 @@ if [[ "$(uname -s)" == "Linux" ]]; then
     sudo apt-get update
 
     # Install PostgreSQL
-    sudo apt-get install -y "postgresql-$INPUT_POSTGRESQL_VERSION"
+    sudo apt-get apt-get -o Dir::Cache::Archives=/tmp install -y "postgresql-$INPUT_POSTGRESQL_VERSION"
 elif [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(uname -s)" == *"MSYS"* ]]; then
     choco install "postgresql$INPUT_POSTGRESQL_VERSION" -y --no-progress
 elif [[ "$(uname -s)" == "Darwin" ]]; then
@@ -48,7 +48,7 @@ fi
 
 echo "Installed postgresql"
 
-echo "Verifying installation..."
+echo "Updating PATH..."
 
 # Verify installation by running pg_dump directly
 if [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(uname -s)" == *"MSYS"* ]]; then
