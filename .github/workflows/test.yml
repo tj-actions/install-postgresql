@@ -27,7 +27,7 @@ jobs:
     name: Test setup-postgresql
     runs-on: ${{ matrix.platform }}
     concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}-${{ matrix.platform }}
+      group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
     strategy:
       fail-fast: false
