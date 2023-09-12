@@ -9,6 +9,27 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    - name: Get cache directory
+      id: cache-dir
+      run: |
+        if [[ "${{ runner.os }}" == "Linux" ]]; then
+          cache_dir=$(apt-cache policy postgresql-${{ inputs.postgresql_version }} | awk '/Filename/ {print $2}')
+        elif [[ "${{ runner.os }}" == "macOS" ]]; then
+          cache_dir=$(brew --cache postgresql@${{ inputs.postgresql_version }})
+        elif [[ "${{ runner.os }}" == "Windows" ]]; then
+          cache_dir=$(choco search postgresql${{ inputs.postgresql_version }} --exact --limit-output | grep "^postgresql " | awk '{print $NF}')
+        fi
+        echo "::set-output name=cache_dir::$cache_dir"
+      shell: bash
+
+    - name: Cache
+      uses: actions/cache@v3
+      with:
+        path: ${{ steps.cache-dir.outputs.cache_dir }}
+        key: ${{ runner.os }}-postgresql-${{ inputs.postgresql_version }}
+        restore-keys: |
+          ${{ runner.os }}-postgresql-
+
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       shell: bash
