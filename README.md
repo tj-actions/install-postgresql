@@ -15,7 +15,7 @@ This Github action installs PostgreSQL on the GitHub actions runner and verifies
     steps:
       - uses: actions/checkout@v4
       - name: Setup PostgreSQL
-        uses: tj-actions/install-postgresql@v1
+        uses: tj-actions/install-postgresql@v2
         with:
           postgresql-version: 15
 ```
