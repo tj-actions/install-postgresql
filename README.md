@@ -20,6 +20,8 @@ This Github action installs PostgreSQL on the GitHub actions runner and verifies
           postgresql_version: 15
 ```
 
+> NOTE: This updates the installed PostgreSQL version with the specified version and updates the PATH.
+
 ## Inputs
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
