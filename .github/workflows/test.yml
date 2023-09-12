@@ -22,6 +22,7 @@ jobs:
   test:
     name: Test setup-postgresql
     runs-on: ${{ matrix.platform }}
+    concurrency: ${{ matrix.platform }}-${{ matrix.postgresql_version }}
     strategy:
       fail-fast: false
       matrix:
