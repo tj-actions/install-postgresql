@@ -1,5 +1,14 @@
 # Changelog
 
+# [2.0.0](https://github.com/tj-actions/install-postgresql/compare/v1.1.0...v2.0.0) - (2023-09-12)
+
+## <!-- 26 -->🔄 Update
+
+- Update README.md ([e4cbb6f](https://github.com/tj-actions/install-postgresql/commit/e4cbb6f3622e53f508ba18d4151c0e5132fe003d))  - (Tonye Jack)
+- Update action.yml ([6e9de9d](https://github.com/tj-actions/install-postgresql/commit/6e9de9d9b0e3f09aa86382f324a2a6db2a619ac0))  - (Tonye Jack)
+- Update README.md ([be57ba7](https://github.com/tj-actions/install-postgresql/commit/be57ba7832a89b5bf3b4f96eeb56663e3aa57a2e))  - (Tonye Jack)
+- Update README.md ([53f2194](https://github.com/tj-actions/install-postgresql/commit/53f219496dc8909d5a2b18bd8bbad422c5f7e0a2))  - (Tonye Jack)
+
 # [1.1.0](https://github.com/tj-actions/install-postgresql/compare/v1.0.0...v1.1.0) - (2023-09-12)
 
 ## <!-- 1 -->🐛 Bug Fixes
