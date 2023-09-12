@@ -2,7 +2,7 @@ name: install-postgresql
 description: Install PostgreSQL on the GitHub actions runner and verify the installation.
 author: tj-actions
 inputs:
-  postgresql_version: 
+  postgresql-version: 
     description: 'Version of PostgreSQL. e.g 15'
     required: true
 
@@ -15,14 +15,14 @@ runs:
       env:
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
-        INPUT_POSTGRESQL_VERSION: ${{ inputs.postgresql_version }}
+        INPUT_POSTGRESQL_VERSION: ${{ inputs.postgresql-version }}
 
     - name: Verify PostgreSQL
       run: |
         # Check the postgresql version
         POSTGRESQL_VERSION=$(psql --version | awk '{print $3}')
-        if [[ "$POSTGRESQL_VERSION" != "${{ inputs.postgresql_version }}."* ]]; then
-          echo "PostgreSQL version $POSTGRESQL_VERSION does not match the expected version ${{ inputs.postgresql_version }}.*"
+        if [[ "$POSTGRESQL_VERSION" != "${{ inputs.postgresql-version }}."* ]]; then
+          echo "PostgreSQL version $POSTGRESQL_VERSION does not match the expected version ${{ inputs.postgresql-version }}.*"
           exit 1
         fi
       shell: bash
