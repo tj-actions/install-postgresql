@@ -32,12 +32,11 @@ This Github action installs PostgreSQL on the GitHub actions runner and verifies
 
 <!-- AUTO-DOC-INPUT:END -->
 
-
 ## Known Limitations
 
 > **Warning**
 >
-> * Slow to install on Windows runners.
+> *   Slow to install on Windows runners.
 
 *   Free software: [MIT license](LICENSE)
 
