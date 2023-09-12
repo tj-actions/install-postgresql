@@ -9,6 +9,28 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    - name: Get cache directory
+      id: cache-dir
+      run: |
+        cache_dir=""
+        if [[ "${{ runner.os }}" == "macOS" ]]; then
+          cache_dir="$(brew --cache postgresql@${{ inputs.postgresql_version }})"
+        elif [[ "${{ runner.os }}" == "Windows" ]]; then
+          cache_dir="~\AppData\Local\Temp\chocolatey"
+        fi
+        echo "cache_dir=$cache_dir" >> "$GITHUB_OUTPUT"
+      shell: bash
+
+    - name: Cache
+      uses: actions/cache@v3
+      id: cache-postgresql
+      if: steps.cache-dir.outputs.cache_dir != ''
+      with:
+        path: ${{ steps.cache-dir.outputs.cache_dir }}
+        key: ${{ runner.os }}-postgresql-${{ inputs.postgresql_version }}
+        restore-keys: |
+          ${{ runner.os }}-postgresql-
+
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       shell: bash
@@ -16,6 +38,16 @@ runs:
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
         INPUT_POSTGRESQL_VERSION: ${{ inputs.postgresql_version }}
+
+    - name: Verify PostgreSQL
+      run: |
+        # Check the postgresql version
+        POSTGRESQL_VERSION=$(psql --version | awk '{print $3}')
+        if [[ "$POSTGRESQL_VERSION" != "${{ inputs.postgresql_version }}."* ]]; then
+          echo "PostgreSQL version $POSTGRESQL_VERSION does not match the expected version ${{ inputs.postgresql_version }}.*"
+          exit 1
+        fi
+      shell: bash
 branding:
   icon: hard-drive
   color: white
