@@ -18,8 +18,7 @@ runs:
         elif [[ "${{ runner.os }}" == "macOS" ]]; then
           cache_dir=$(brew --cache postgresql@${{ inputs.postgresql_version }})
         elif [[ "${{ runner.os }}" == "Windows" ]]; then
-          choco config get cacheLocation
-          ls -al $(choco config get cacheLocation)
+          choco search postgresql --exact --all-versions --limit-output --order-by-popularity --by-id-only --approved-only --download-cache
           cache_dir=$(choco cache list | grep 'postgresql${{ inputs.postgresql_version }}')
         fi
         echo "cache_dir=$cache_dir" >> "$GITHUB_OUTPUT"
