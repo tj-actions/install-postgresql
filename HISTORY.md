@@ -1,5 +1,16 @@
 # Changelog
 
+# [2.0.2](https://github.com/tj-actions/install-postgresql/compare/v2.0.1...v2.0.2) - (2023-09-12)
+
+## <!-- 30 -->📝 Other
+
+- PR [#10](https://github.com/tj-actions/install-postgresql/pull/10): to v2.0.1 ([0eb77dc](https://github.com/tj-actions/install-postgresql/commit/0eb77dc75e7388ffdbc8542800cb55de1a935d29))  - (repo-ranger[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v2.0.0 -> v2.0.1
+ ([00df2f2](https://github.com/tj-actions/install-postgresql/commit/00df2f2c04fb80a7c85584c24c6df19d76dc6a59))  - (jackton1)
+
 # [2.0.1](https://github.com/tj-actions/install-postgresql/compare/v2.0.0...v2.0.1) - (2023-09-12)
 
 ## <!-- 26 -->🔄 Update
