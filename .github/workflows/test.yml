@@ -27,7 +27,7 @@ jobs:
       fail-fast: false
       matrix:
         platform: [ubuntu-latest, ubuntu-20.04, macos-latest, macos-11, macos-13, windows-latest]
-        postgresql_version: [10, 11, 12, 14, 15, 16]
+        postgresql_version: [11, 12, 14, 15, 16]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
