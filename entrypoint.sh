@@ -13,7 +13,7 @@ if ! [[ "$INPUT_POSTGRESQL_VERSION" =~ ^[0-9]+$ ]]; then
 fi
 
 # Check if the input is between 11 and 16 (inclusive)
-if (( INPUT_POSTGRESQL_VERSION < 10 || INPUT_POSTGRESQL_VERSION > 16 )); then
+if (( INPUT_POSTGRESQL_VERSION < 11 || INPUT_POSTGRESQL_VERSION > 16 )); then
     echo "Error: $INPUT_POSTGRESQL_VERSION is not between 11 and 16 (inclusive)."
     exit 1
 fi
