@@ -3,7 +3,7 @@ description: Install PostgreSQL on the GitHub actions runner and verify the inst
 author: tj-actions
 inputs:
   postgresql-version: 
-    description: 'Version of PostgreSQL. e.g 15'
+    description: 'Version of PostgreSQL. e.g 16'
     required: true
 
 runs:
