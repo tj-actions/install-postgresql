@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "BrennanColberg",
+      "name": "Brennan Colberg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14948341?v=4",
+      "profile": "http://brennancolberg.com",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "install-postgresql",
+  "projectOwner": "tj-actions"
+}
