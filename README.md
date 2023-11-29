@@ -34,7 +34,7 @@ This Github action installs PostgreSQL on the GitHub actions runner and verifies
 
 ## Known Limitations
 
-> [!WARNING]
+> \[!WARNING]
 >
 > *   Slow to install on Windows runners.
 
