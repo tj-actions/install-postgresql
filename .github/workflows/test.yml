@@ -39,6 +39,6 @@ jobs:
         run: |
       - name: Verify PostgreSQL
         run: |
-          pg_dump --version | grep -q "PostgreSQL ${matrix.postgresql_version}.*" # Check if the version in the output matches the version in the matrix
-          psql --version | grep -q "psql (PostgreSQL) ${matrix.postgresql_version}.*" # Check if the version in the output matches the version in the matrix
-          pg_restore --version | grep -q "pg_restore (PostgreSQL) ${matrix.postgresql_version}.*" # Check if the version in the output matches the version in the matrix
+          pg_dump --version | grep -q "PostgreSQL ${{ matrix.postgresql_version }}.*"
+          psql --version | grep -q "psql (PostgreSQL) ${{ matrix.postgresql_version }}.*"
+          pg_restore --version | grep -q "pg_restore (PostgreSQL) ${{ matrix.postgresql_version }}.*"
