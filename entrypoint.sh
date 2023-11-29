@@ -39,8 +39,7 @@ if [[ "$(uname -s)" == "Linux" ]]; then
 elif [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(uname -s)" == *"MSYS"* ]]; then
     choco install "postgresql$INPUT_POSTGRESQL_VERSION" -y --no-progress --use-download-cache
 elif [[ "$(uname -s)" == "Darwin" ]]; then
-    brew update
-    brew install "postgresql@$INPUT_POSTGRESQL_VERSION"
+    HOMEBREW_NO_AUTO_UPDATE=1 brew install --force "postgresql@$INPUT_POSTGRESQL_VERSION"
 else
     echo "Unsupported OS"
     exit 1
