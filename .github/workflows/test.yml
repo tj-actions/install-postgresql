@@ -26,7 +26,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: [ubuntu-latest, ubuntu-20.04, macos-latest, macos-11, macos-13, windows-latest]
+        platform: [ubuntu-latest, macos-latest, windows-latest]
         postgresql_version: [11, 12, 14, 15]
     steps:
       - name: Checkout
