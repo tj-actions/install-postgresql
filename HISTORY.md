@@ -1,5 +1,33 @@
 # Changelog
 
+# [3.0.1](https://github.com/tj-actions/install-postgresql/compare/v3.0.0...v3.0.1) - (2023-12-10)
+
+## <!-- 17 -->➖ Remove
+
+- Deleted .github/workflows/auto-approve.yml ([396487f](https://github.com/tj-actions/install-postgresql/commit/396487f9ee41a00b6ac2c32b9ffeed35ee8f6013))  - (Tonye Jack)
+
+## <!-- 26 -->🔄 Update
+
+- Update test.yml ([4e7cf0b](https://github.com/tj-actions/install-postgresql/commit/4e7cf0b76bf6683da8a575a6b281f567aaa11659))  - (Tonye Jack)
+- Update test.yml ([91d85ad](https://github.com/tj-actions/install-postgresql/commit/91d85ad11a8c80892eab25ab7d84dc590459dc1d))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#21](https://github.com/tj-actions/install-postgresql/pull/21): update test to validate installed version ([d3ea02f](https://github.com/tj-actions/install-postgresql/commit/d3ea02fb7ff035289019cd8dd9a7e8142371a06a))  - (repo-ranger[bot])
+- PR [#20](https://github.com/tj-actions/install-postgresql/pull/20): to v3 ([f716066](https://github.com/tj-actions/install-postgresql/commit/f71606658b1e72a0cdb534fffa1c823e853a0cad))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Update entrypoint.sh removing —force option ([#24](https://github.com/tj-actions/install-postgresql/issues/24)) ([b3af46a](https://github.com/tj-actions/install-postgresql/commit/b3af46a4f2f8088a11ade4beaed9e2646862a9ce))  - (Tonye Jack)
+- **deps:** Update alpine docker tag to v3.19.0 ([b7f801c](https://github.com/tj-actions/install-postgresql/commit/b7f801ce3d4ebed336ebef2b257a9650e5113b0c))  - (renovate[bot])
+- **deps:** Update alpine docker tag to v3.18.5 ([b4da725](https://github.com/tj-actions/install-postgresql/commit/b4da7250f32a5348cfe0a62ed4be34f781f1e4d7))  - (renovate[bot])
+- Update test to validate installed version ([154c34a](https://github.com/tj-actions/install-postgresql/commit/154c34a0495819ef4614941a2ee94112e5a51157))  - (Tonye Jack)
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v2.0.2 -> v3
+ ([1e9422d](https://github.com/tj-actions/install-postgresql/commit/1e9422d055fd1df2a6690d59e4e8cebed5a71cdc))  - (jackton1)
+
 # [3.0.0](https://github.com/tj-actions/install-postgresql/compare/v2.0.2...v3.0.0) - (2023-11-29)
 
 ## <!-- 1 -->🐛 Bug Fixes
