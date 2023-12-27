@@ -28,7 +28,7 @@ This Github action installs PostgreSQL on the GitHub actions runner and verifies
 
 > \[!NOTE]
 >
-> *   This updates the installed PostgreSQL version with the specified version and updates the PATH.
+> *   This updates the pre-installed PostgreSQL version on the action runner with the specified version and updates the PATH.
 
 ## Inputs
 
