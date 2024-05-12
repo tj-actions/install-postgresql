@@ -13,8 +13,8 @@ if ! [[ "$INPUT_POSTGRESQL_VERSION" =~ ^[0-9]+$ ]]; then
 fi
 
 # Check if the input is between 11 and 16 (inclusive)
-if (( INPUT_POSTGRESQL_VERSION < 11 || INPUT_POSTGRESQL_VERSION > 16 )); then
-    echo "Error: $INPUT_POSTGRESQL_VERSION is not between 11 and 16 (inclusive)."
+if (( INPUT_POSTGRESQL_VERSION < 12 || INPUT_POSTGRESQL_VERSION > 16 )); then
+    echo "Error: $INPUT_POSTGRESQL_VERSION is not between 12 and 16 (inclusive)."
     exit 1
 fi
 
@@ -53,7 +53,7 @@ if [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(unam
     # shellcheck disable=SC2028
     echo "C:\\Program Files\\PostgreSQL\\$INPUT_POSTGRESQL_VERSION\\bin" >> "$GITHUB_PATH"
 elif [[ "$(uname -s)" == "Darwin" ]]; then
-    echo "/usr/local/opt/postgresql@${INPUT_POSTGRESQL_VERSION}/bin" >> "$GITHUB_PATH"
+    echo "$(brew --prefix postgresql@"${INPUT_POSTGRESQL_VERSION}")/bin" >> "$GITHUB_PATH"
 else
     echo "/usr/lib/postgresql/$INPUT_POSTGRESQL_VERSION/bin" >> "$GITHUB_PATH"
 fi
