@@ -1,5 +1,17 @@
 # Changelog
 
+# [3.1.1](https://github.com/tj-actions/install-postgresql/compare/v3.1.0...v3.1.1) - (2024-05-12)
+
+## <!-- 26 -->🔄 Update
+
+- Update entrypoint.sh ([2a80e93](https://github.com/tj-actions/install-postgresql/commit/2a80e9368dff47cd05fee5bf3cf7d88f68c2f8e9))  - (Tonye Jack)
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded to v3.1.0 ([#36](https://github.com/tj-actions/install-postgresql/issues/36))
+
+Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([0ab946a](https://github.com/tj-actions/install-postgresql/commit/0ab946ac805388297ce47d29e6300a810388e73f))  - (tj-actions[bot])
+
 # [3.1.0](https://github.com/tj-actions/install-postgresql/compare/v3.0.1...v3.1.0) - (2024-05-12)
 
 ## <!-- 17 -->➖ Remove
