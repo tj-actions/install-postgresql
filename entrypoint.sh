@@ -53,7 +53,7 @@ if [[ "$(uname -s)" == "NT"* ]] || [[ "$(uname -s)" == "MINGW"* ]] || [[ "$(unam
     # shellcheck disable=SC2028
     echo "C:\\Program Files\\PostgreSQL\\$INPUT_POSTGRESQL_VERSION\\bin" >> "$GITHUB_PATH"
 elif [[ "$(uname -s)" == "Darwin" ]]; then
-    echo "$(brew --prefix postgresql@${INPUT_POSTGRESQL_VERSION})/bin" >> "$GITHUB_PATH"
+    echo "$(brew --prefix postgresql@"${INPUT_POSTGRESQL_VERSION}")/bin" >> "$GITHUB_PATH"
 else
     echo "/usr/lib/postgresql/$INPUT_POSTGRESQL_VERSION/bin" >> "$GITHUB_PATH"
 fi
