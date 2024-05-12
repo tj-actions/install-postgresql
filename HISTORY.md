@@ -1,5 +1,43 @@
 # Changelog
 
+# [3.1.0](https://github.com/tj-actions/install-postgresql/compare/v3.0.1...v3.1.0) - (2024-05-12)
+
+## <!-- 17 -->➖ Remove
+
+- Deprecated postgreSQL version 11 ([#35](https://github.com/tj-actions/install-postgresql/issues/35)) ([95edc25](https://github.com/tj-actions/install-postgresql/commit/95edc2508ac2fb4a9334af5effd162707e2a3286))  - (Tonye Jack)
+- Delete Dockerfile ([225e397](https://github.com/tj-actions/install-postgresql/commit/225e397eb715be6c9df4f4ff0b8898d349ff14dc))  - (Tonye Jack)
+
+## <!-- 26 -->🔄 Update
+
+- Update README.md ([869ddd8](https://github.com/tj-actions/install-postgresql/commit/869ddd825907f83c6053e63840061ae2009c1e2a))  - (Tonye Jack)
+- Update README.md ([4538d82](https://github.com/tj-actions/install-postgresql/commit/4538d82903dd9e740acff15845f0a4e450221be0))  - (Tonye Jack)
+- Update README.md ([#26](https://github.com/tj-actions/install-postgresql/issues/26))
+
+ ([b808273](https://github.com/tj-actions/install-postgresql/commit/b808273ea8c691475f49224ecc7bb995d6a135d5))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#32](https://github.com/tj-actions/install-postgresql/pull/32): update tj-actions/verify-changed-files action to v19 ([0dbc9fb](https://github.com/tj-actions/install-postgresql/commit/0dbc9fb230ae1b835093187edf8743f794f35ba0))  - (repo-ranger[bot])
+- PR [#31](https://github.com/tj-actions/install-postgresql/pull/31): update tj-actions/verify-changed-files action to v18 ([881506e](https://github.com/tj-actions/install-postgresql/commit/881506e4743a79baa0285e4bb679c963187623e4))  - (repo-ranger[bot])
+- PR [#30](https://github.com/tj-actions/install-postgresql/pull/30): update peter-evans/create-pull-request action to v6 ([92238b9](https://github.com/tj-actions/install-postgresql/commit/92238b94791135dbb3be81cbdbd125d81c8b58f2))  - (repo-ranger[bot])
+- PR [#27](https://github.com/tj-actions/install-postgresql/pull/27): update tj-actions/verify-changed-files action to v17 ([4ffbe00](https://github.com/tj-actions/install-postgresql/commit/4ffbe002942f15f0dca59f25a9f877c6e83df0db))  - (repo-ranger[bot])
+- PR [#25](https://github.com/tj-actions/install-postgresql/pull/25): to v3.0.1 ([47f2894](https://github.com/tj-actions/install-postgresql/commit/47f2894bd25b1f0dabf658175262b5d10a0dac11))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/verify-changed-files action to v20 ([#34](https://github.com/tj-actions/install-postgresql/issues/34)) ([1762c74](https://github.com/tj-actions/install-postgresql/commit/1762c746ed02f8fc5dd4f8bd7e8e872e9946407f))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.20 ([d7fe33a](https://github.com/tj-actions/install-postgresql/commit/d7fe33a478d74e8612d6e75fc5e8d1723a575378))  - (renovate[bot])
+- **deps:** Update tj-actions/verify-changed-files action to v19 ([a98e01f](https://github.com/tj-actions/install-postgresql/commit/a98e01f52099e54f29fd9be34716669ca4d370fb))  - (renovate[bot])
+- **deps:** Update tj-actions/verify-changed-files action to v18 ([96d7212](https://github.com/tj-actions/install-postgresql/commit/96d721236e9afa7bff4afc8c521b7da8d14e8cdc))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v6 ([befde92](https://github.com/tj-actions/install-postgresql/commit/befde92d09ff62ed1c63dbefab9ea526ca3631a1))  - (renovate[bot])
+- **deps:** Update alpine docker tag to v3.19.1 ([3df1f3c](https://github.com/tj-actions/install-postgresql/commit/3df1f3c2060a2d3456ca94c5ff5bec3cfc3225fa))  - (renovate[bot])
+- **deps:** Update tj-actions/verify-changed-files action to v17 ([b6c5f80](https://github.com/tj-actions/install-postgresql/commit/b6c5f8051abe16a5fd39632eaacbe8f3b93849f4))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v3.0.0 -> v3.0.1
+ ([8c876ae](https://github.com/tj-actions/install-postgresql/commit/8c876ae1c0b3a19e429a68ae8a49686bdca12f70))  - (jackton1)
+
 # [3.0.1](https://github.com/tj-actions/install-postgresql/compare/v3.0.0...v3.0.1) - (2023-12-10)
 
 ## <!-- 17 -->➖ Remove
@@ -91,8 +129,6 @@ Co-authored-by: Tonye Jack <jtonye@ymail.com>
 - Update test.yml ([58ec590](https://github.com/tj-actions/install-postgresql/commit/58ec590711343f2e991d997b8a3acde7d088ff7b))  - (Tonye Jack)
 - Update test.yml ([1d34b01](https://github.com/tj-actions/install-postgresql/commit/1d34b01af4b5c96b6542f0f6df0cfee5e3521efb))  - (Tonye Jack)
 - Update test.yml ([b6a60f0](https://github.com/tj-actions/install-postgresql/commit/b6a60f0058bb8eeaa8d26b111eb38ddac6638ae8))  - (Tonye Jack)
-- Updated README.md
- ([266f0ec](https://github.com/tj-actions/install-postgresql/commit/266f0ec00254146ea96f0379603dfe7e77cb4de9))  - (jackton1)
 
 ## <!-- 30 -->📝 Other
 
@@ -115,6 +151,8 @@ Co-authored-by: Tonye Jack <jtonye@ymail.com>
 - Update README.md ([e4cbb6f](https://github.com/tj-actions/install-postgresql/commit/e4cbb6f3622e53f508ba18d4151c0e5132fe003d))  - (Tonye Jack)
 - Update action.yml ([6e9de9d](https://github.com/tj-actions/install-postgresql/commit/6e9de9d9b0e3f09aa86382f324a2a6db2a619ac0))  - (Tonye Jack)
 - Update README.md ([be57ba7](https://github.com/tj-actions/install-postgresql/commit/be57ba7832a89b5bf3b4f96eeb56663e3aa57a2e))  - (Tonye Jack)
+- Updated README.md
+ ([266f0ec](https://github.com/tj-actions/install-postgresql/commit/266f0ec00254146ea96f0379603dfe7e77cb4de9))  - (jackton1)
 - Update README.md ([53f2194](https://github.com/tj-actions/install-postgresql/commit/53f219496dc8909d5a2b18bd8bbad422c5f7e0a2))  - (Tonye Jack)
 
 # [1.1.0](https://github.com/tj-actions/install-postgresql/compare/v1.0.0...v1.1.0) - (2023-09-12)
@@ -221,9 +259,9 @@ Co-authored-by: Tonye Jack <jtonye@ymail.com>
  ([dce70a1](https://github.com/tj-actions/install-postgresql/commit/dce70a13b673b54d858098f9a2c8eee5cbb6aa70))  - (Tonye Jack)
 - Updated command
  ([b57977a](https://github.com/tj-actions/install-postgresql/commit/b57977ae8ce9f8a1ced86782910b1f440ec792ad))  - (Tonye Jack)
-- Update test.yml ([98434f2](https://github.com/tj-actions/install-postgresql/commit/98434f288237bc7f1755f6dce68186043a2d882a))  - (Tonye Jack)
 - Updated README.md
  ([b85c704](https://github.com/tj-actions/install-postgresql/commit/b85c7042bffad06f4602d1e53b61101068149d13))  - (jackton1)
+- Update test.yml ([98434f2](https://github.com/tj-actions/install-postgresql/commit/98434f288237bc7f1755f6dce68186043a2d882a))  - (Tonye Jack)
 - Update test.yml ([9fc5e45](https://github.com/tj-actions/install-postgresql/commit/9fc5e45b6b48236d4e7f6ac9bbb58a82bf52df6e))  - (Tonye Jack)
 - Update README.md ([7360e92](https://github.com/tj-actions/install-postgresql/commit/7360e92e81c4e9c7ed4fc61779b2b5e47f55285c))  - (Tonye Jack)
 - Update action.yml ([9946293](https://github.com/tj-actions/install-postgresql/commit/9946293537d49845348c5fad61299d35fb7d140c))  - (Tonye Jack)
