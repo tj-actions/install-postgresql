@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: shellcheck
-        uses: reviewdog/action-shellcheck@v1.22
+        uses: reviewdog/action-shellcheck@v1.23
 
   test:
     name: Test setup-postgresql
