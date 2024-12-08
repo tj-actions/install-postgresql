@@ -17,6 +17,16 @@
         "doc",
         "test"
       ]
+    },
+    {
+      "login": "ragrag",
+      "name": "Ragy Hosny",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35541698?v=4",
+      "profile": "http://ragrag.github.io",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
