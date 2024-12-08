@@ -1,5 +1,49 @@
 # Changelog
 
+# [3.2.0](https://github.com/tj-actions/install-postgresql/compare/v3.1.1...v3.2.0) - (2024-12-08)
+
+## <!-- 16 -->➕ Add
+
+- Add support for PG 17 ([#45](https://github.com/tj-actions/install-postgresql/issues/45))
+
+* add support for pg 17
+
+* enable manually running test action
+
+---------
+
+Co-authored-by: Tonye Jack <jtonye@ymail.com> ([f22fc31](https://github.com/tj-actions/install-postgresql/commit/f22fc31f92da576890cb9fe1d8a87f9822cd8fe6))  - (Ragy Hosny)
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md ([#48](https://github.com/tj-actions/install-postgresql/issues/48))
+
+Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([d968f44](https://github.com/tj-actions/install-postgresql/commit/d968f446ee57edbfa20c3e2b28f5e07dd47041e2))  - (tj-actions[bot])
+
+## <!-- 3 -->📚 Documentation
+
+- Add ragrag as a contributor for code, and doc ([#47](https://github.com/tj-actions/install-postgresql/issues/47)) ([eca924a](https://github.com/tj-actions/install-postgresql/commit/eca924aafa4c7ce6aad83e958191bd7fd3169339))  - (allcontributors[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#37](https://github.com/tj-actions/install-postgresql/pull/37): to v3.1.1 ([76ddf4f](https://github.com/tj-actions/install-postgresql/commit/76ddf4fef849cf48f83fc172c4267fe7a55a1710))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update peter-evans/create-pull-request action to v7 ([#43](https://github.com/tj-actions/install-postgresql/issues/43)) ([a889ed6](https://github.com/tj-actions/install-postgresql/commit/a889ed6c6fa05022333ed4101295bb1d604f97a8))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.28 ([#46](https://github.com/tj-actions/install-postgresql/issues/46)) ([d1d302b](https://github.com/tj-actions/install-postgresql/commit/d1d302b1a4630009ab5623189ed9d62d8b1adffd))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.27 ([da6c83b](https://github.com/tj-actions/install-postgresql/commit/da6c83b9482eb6d17121136c2a7315690446dcfe))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.26 ([412592c](https://github.com/tj-actions/install-postgresql/commit/412592c030bb70c7a5cd6fc8b6a70b62cd3cb644))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.25 ([dcb1e6f](https://github.com/tj-actions/install-postgresql/commit/dcb1e6f65ca081dfb2281a91d65ab17804d56075))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.23 ([27a6161](https://github.com/tj-actions/install-postgresql/commit/27a61618caeda3b0b6b13a95095d38cd163d9038))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.22 ([6864b0d](https://github.com/tj-actions/install-postgresql/commit/6864b0d8a285c8479519498ca36b6218fcdfab7e))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.21 ([0b08d1c](https://github.com/tj-actions/install-postgresql/commit/0b08d1c76bde3d9b5cfb738b9720f77fddafdce9))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v3.1.0 -> v3.1.1
+ ([11887e6](https://github.com/tj-actions/install-postgresql/commit/11887e6a8ae514d3cf6093be936213264a394f82))  - (jackton1)
+
 # [3.1.1](https://github.com/tj-actions/install-postgresql/compare/v3.1.0...v3.1.1) - (2024-05-12)
 
 ## <!-- 26 -->🔄 Update
