@@ -7,9 +7,7 @@
 [![Update release version.](https://github.com/tj-actions/install-postgresql/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/setup-postgresql/actions?query=workflow%3A%22Update+release+version.%22)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## install-postgresql
@@ -75,21 +73,18 @@ If you are reporting a bug, please include:
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-
 <!-- prettier-ignore-start -->
-
 <!-- markdownlint-disable -->
-
 <table>
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://brennancolberg.com"><img src="https://avatars.githubusercontent.com/u/14948341?v=4?s=100" width="100px;" alt="Brennan Colberg"/><br /><sub><b>Brennan Colberg</b></sub></a><br /><a href="https://github.com/tj-actions/install-postgresql/commits?author=BrennanColberg" title="Code">💻</a> <a href="https://github.com/tj-actions/install-postgresql/commits?author=BrennanColberg" title="Documentation">📖</a> <a href="https://github.com/tj-actions/install-postgresql/commits?author=BrennanColberg" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://ragrag.github.io"><img src="https://avatars.githubusercontent.com/u/35541698?v=4?s=100" width="100px;" alt="Ragy Hosny"/><br /><sub><b>Ragy Hosny</b></sub></a><br /><a href="https://github.com/tj-actions/install-postgresql/commits?author=ragrag" title="Code">💻</a> <a href="https://github.com/tj-actions/install-postgresql/commits?author=ragrag" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
 
 <!-- markdownlint-restore -->
-
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
