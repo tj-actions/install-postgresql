@@ -26,11 +26,12 @@ OS=$(uname -s)
 echo "OS: $OS"
 
 if [[ "$OS" == "Linux" ]]; then
-    # Create the file repository configuration:
-    sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+    # Import the repository signing key (apt-key was removed in Ubuntu 26.04):
+    sudo install -d -m 0755 /etc/apt/keyrings
+    wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo tee /etc/apt/keyrings/pgdg.asc > /dev/null
 
-    # Import the repository signing key:
-    wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+    # Create the file repository configuration:
+    sudo sh -c 'echo "deb [signed-by=/etc/apt/keyrings/pgdg.asc] https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 
     # Update the package lists:
     sudo apt-get update
